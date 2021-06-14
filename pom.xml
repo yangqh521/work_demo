@@ -8,7 +8,11 @@
     <name>work_demo</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <url>http://maven.apache.org</url>
+
+    <modules>
+        <module>demo-spring5</module>
+    </modules>
+
 
     <properties>
         <public.version>1.0-SNAPSHOT</public.version>
@@ -17,6 +21,7 @@
         <testng.version>6.14.3</testng.version>
         <fastjson.version>1.2.62</fastjson.version>
         <hutool.all.version>5.5.2</hutool.all.version>
+        <spring.version>5.2.6.RELEASE</spring.version>
         <elasticsearch.version>7.6.2</elasticsearch.version>
         <commons.lang3.version>3.7</commons.lang3.version>
         <commons.logging.version>1.1.3</commons.logging.version>

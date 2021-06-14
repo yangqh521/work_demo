@@ -4,9 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.yqh.demo.spring5.entity.User">
+    <bean id="user" class="com.yqh.demo.commons.entity.User">
         <property name="name" value="yangqh"/>
         <property name="age" value="27"/>
+        <property name="email" value="yangqh521@qq.com"/>
+        <property name="address" value="beijing"/>
     </bean>
 
 

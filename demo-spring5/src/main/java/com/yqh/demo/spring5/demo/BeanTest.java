@@ -1,7 +1,7 @@
 package com.yqh.demo.spring5.demo;
 
 import com.alibaba.fastjson.JSONObject;
-import com.yqh.demo.spring5.entity.User;
+import com.yqh.demo.common.entity.User;
 import org.testng.annotations.Test;
 
 /**
@@ -30,7 +30,7 @@ public class BeanTest extends ApplicationContextTest {
 
     @Override
     String getXMLName() {
-        return "bean.xml";
+        return "bean1.xml";
     }
 
     /**

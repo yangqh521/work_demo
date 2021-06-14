@@ -11,8 +11,9 @@
 
     <modules>
         <module>demo-spring5</module>
+        <module>demo-springboot2</module>
+        <module>demo-commons</module>
     </modules>
-
 
     <properties>
         <public.version>1.0-SNAPSHOT</public.version>
@@ -171,6 +172,11 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${testng.version}</version>
             </dependency>
 
         </dependencies>

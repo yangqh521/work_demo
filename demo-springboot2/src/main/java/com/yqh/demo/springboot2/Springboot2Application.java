@@ -27,7 +27,16 @@ public class Springboot2Application {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(Springboot2Application.class, args);
-        testMyConfig(context);
+//        testMyConfig(context);
+        testSource(context);
+    }
+
+    /**
+     * 源码测试
+     */
+    public static void testSource(ConfigurableApplicationContext context) {
+        int beanDefinitionCount = context.getBeanDefinitionCount();
+        System.out.println("beanDefinitionCount >>> " + beanDefinitionCount);
     }
 
     /**

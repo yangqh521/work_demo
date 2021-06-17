@@ -10,6 +10,10 @@
 
     <artifactId>demo-springboot2</artifactId>
 
+    <properties>
+        <spring.boot.version>2.3.4.RELEASE</spring.boot.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.yqh.demo</groupId>

@@ -33,7 +33,7 @@
         <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
         <dubbo.spring.boot.version>0.2.0</dubbo.spring.boot.version>
         <spring.cloud.version>Hoxton.SR1</spring.cloud.version>
-        <spring.boot.version>2.2.2.RELEASE</spring.boot.version>
+        <spring.boot.version>2.1.0.RELEASE</spring.boot.version>
         <spring.cloud.alibaba.version>2.1.0.RELEASE</spring.cloud.alibaba.version>
         <logback.classic.version>1.2.3</logback.classic.version>
         <logback.kafka.appender.version>0.1.0</logback.kafka.appender.version>

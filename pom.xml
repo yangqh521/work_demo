@@ -13,6 +13,7 @@
         <module>demo-spring5</module>
         <module>demo-springboot2</module>
         <module>demo-commons</module>
+        <module>demo-rpc</module>
     </modules>
 
     <properties>

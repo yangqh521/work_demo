@@ -1,4 +1,4 @@
-package com.yqh.demo.rpc.register;
+package com.yqh.demo.rpc.provider;
 
 import java.util.HashMap;
 import java.util.Map;

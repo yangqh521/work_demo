@@ -2,7 +2,7 @@ package com.yqh.demo.rpc.protocol.http;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yqh.demo.rpc.framework.Invocation;
-import com.yqh.demo.rpc.register.LocalRegister;
+import com.yqh.demo.rpc.provider.LocalRegister;
 import org.apache.commons.io.IOUtils;
 
 import javax.servlet.http.HttpServletRequest;

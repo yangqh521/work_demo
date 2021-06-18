@@ -1,7 +1,6 @@
 package com.yqh.demo.rpc.framework;
 
 import lombok.Data;
-
 import java.io.Serializable;
 
 /**

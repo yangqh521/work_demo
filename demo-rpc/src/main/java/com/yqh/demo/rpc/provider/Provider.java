@@ -1,12 +1,13 @@
 package com.yqh.demo.rpc.provider;
 
+import com.yqh.demo.rpc.framework.Protocol;
+import com.yqh.demo.rpc.framework.ProtocolFactory;
 import com.yqh.demo.rpc.framework.URL;
 import com.yqh.demo.rpc.protocol.http.HttpServer;
 import com.yqh.demo.rpc.provider.api.IHelloApiService;
 import com.yqh.demo.rpc.provider.impl.HelloApiServiceImpl;
 import com.yqh.demo.rpc.register.LocalRegister;
 import com.yqh.demo.rpc.register.RemoteMapRegister;
-import java.io.IOException;
 
 /**
  * @author yangqh521
@@ -30,8 +31,8 @@ public class Provider {
         RemoteMapRegister.register(IHelloApiService.class.getName(), url);
 
         // 3、启动tomcat
-        HttpServer server = new HttpServer();
-        server.start("localhost", 8080);
+        Protocol protocol = ProtocolFactory.getProtocol();
+        protocol.start(url);
     }
 
 }

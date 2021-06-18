@@ -33,9 +33,9 @@ public class ProxyFactory {
                 URL url = RemoteMapRegister.loanBanlance(interfaceClass.getName());
                 System.out.println("getProxy >>> url:" + JSONObject.toJSONString(url));
 
-                HttpClient httpClient = new HttpClient();
+                Protocol protocol= ProtocolFactory.getProtocol();
 
-                String response = httpClient.send(url.getHostName(), url.getPort(), invocation);
+                String response = protocol.send(url, invocation);
                 System.out.println("getProxy >>> response:" + response);
 
                 return response;

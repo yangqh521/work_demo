@@ -16,12 +16,14 @@ public class HttpProtocol implements Protocol {
 
     @Override
     public void start(URL url) {
-
+        HttpServer server = new HttpServer();
+        server.start(url.getHostName(), url.getPort());
     }
 
     @Override
-    public void send(URL url, Invocation invocation) {
-
+    public String send(URL url, Invocation invocation) {
+        HttpClient httpClient = new HttpClient();
+        return httpClient.send(url.getHostName(), url.getPort(), invocation);
     }
 
 }

@@ -12,6 +12,6 @@ public interface Protocol {
 
     void start(URL url);
 
-    void send(URL url, Invocation invocation);
+    String send(URL url, Invocation invocation);
 
 }

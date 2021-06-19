@@ -1,0 +1,28 @@
+# 端口
+---
+server:
+  port: 80
+
+# 服务
+---
+spring:
+  application:
+    name: demo-dubbo-consumer
+  servlet:
+    context-path: /
+
+# dubbo 配置
+---
+dubbo:
+  application:
+    name: demo-dubbo-consumer
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: zookeeper://39.106.222.121:2181
+  consumer:
+    version: 1.0.0
+    timeout: 6000
+    retries: 0
+

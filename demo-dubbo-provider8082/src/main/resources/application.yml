@@ -1,0 +1,33 @@
+# 端口
+---
+server:
+  port: 8082
+
+# 服务
+---
+spring:
+  application:
+    name: demo-dubbo-provider8082
+  servlet:
+    context-path: /
+
+# dubbo 配置
+---
+dubbo:
+  application:
+    name: demo-dubbo-provider8082
+  protocol:
+    name: dubbo
+    port: 20882
+  registry:
+    address: zookeeper://39.106.222.121:2181
+  scan:
+    base-packages: com.yqh.demo.dubbo.provider
+  provider:
+    version: 1.0.0
+    threads: 100
+    accepts: 1000
+    threadpool: fixed
+    timeout: 60000
+    retries: 0
+

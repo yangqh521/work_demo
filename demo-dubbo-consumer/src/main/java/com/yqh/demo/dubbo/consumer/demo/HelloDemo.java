@@ -26,9 +26,9 @@ public class HelloDemo {
 
     @Test
     public void sayHelloTest() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 20; i++) {
             try {
-                TimeUnit.MILLISECONDS.sleep(500);
+                TimeUnit.MILLISECONDS.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

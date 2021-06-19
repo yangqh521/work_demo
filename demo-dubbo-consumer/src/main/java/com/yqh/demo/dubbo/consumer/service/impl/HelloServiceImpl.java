@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 public class HelloServiceImpl implements IHelloService {
 
     @Reference
+//    @Reference(url = "dubbo://localhost:20882")
     private IHelloApiService helloApiService;
 
     @Override

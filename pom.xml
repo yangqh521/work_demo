@@ -18,6 +18,7 @@
         <module>demo-dubbo-api</module>
         <module>demo-dubbo-provider8081</module>
         <module>demo-dubbo-provider8082</module>
+        <module>demo-netty</module>
     </modules>
 
     <properties>

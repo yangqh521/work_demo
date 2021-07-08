@@ -15,7 +15,7 @@
         <dependency>
             <groupId>com.yqh.demo</groupId>
             <artifactId>demo-commons</artifactId>
-            <version>${public.version}</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

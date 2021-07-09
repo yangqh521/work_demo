@@ -1,0 +1,2 @@
+consumerRpcTraceFilter=com.yqh.demo.dubbo.base.filter.ConsumerRpcTraceFilter
+providerRpcTraceFilter=com.yqh.demo.dubbo.base.filter.ProviderRpcTraceFilter

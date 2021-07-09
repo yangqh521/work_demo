@@ -19,7 +19,8 @@
         <module>demo-dubbo-provider8081</module>
         <module>demo-dubbo-provider8082</module>
         <module>demo-netty</module>
-        <module>demo-juc</module>
+        <module>demo-java-juc</module>
+        <module>demo-dubbo-base</module>
     </modules>
 
     <properties>

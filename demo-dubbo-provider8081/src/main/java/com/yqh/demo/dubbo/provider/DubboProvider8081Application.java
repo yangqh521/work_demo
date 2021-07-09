@@ -1,8 +1,10 @@
 package com.yqh.demo.dubbo.provider;
 
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import com.yqh.demo.dubbo.base.DubboBaseAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Import;
 
 /**
  * @author yangqh521
@@ -14,6 +16,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @EnableDubbo
 @SpringBootApplication
+@Import(DubboBaseAutoConfiguration.class)
 public class DubboProvider8081Application {
 
     public static void main(String[] args) {

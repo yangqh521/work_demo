@@ -21,6 +21,7 @@
         <module>demo-netty</module>
         <module>demo-java-juc</module>
         <module>demo-dubbo-base</module>
+        <module>demo-plantuml</module>
     </modules>
 
     <properties>

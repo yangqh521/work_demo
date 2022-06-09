@@ -20,7 +20,7 @@ dubbo:
     name: dubbo
     port: 20882
   registry:
-    address: zookeeper://39.106.222.121:2181
+    address: zookeeper://43.138.53.44:2181
   scan:
     base-packages: com.yqh.demo.dubbo.provider
   provider:

@@ -1,0 +1,14 @@
+# 端口
+---
+server:
+  port: 8089
+
+# 服务
+---
+spring:
+  application:
+    name: demo-vaild
+  servlet:
+    context-path: /
+
+

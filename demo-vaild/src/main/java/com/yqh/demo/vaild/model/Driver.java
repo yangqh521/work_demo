@@ -7,12 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
- * @Author: yangqinghui@cfhy.com
- * @Description:
- * @Date: Created in 17:12 2025/7/24
- * @Modified By:
- */
+
 @Data
 @Builder
 @NoArgsConstructor

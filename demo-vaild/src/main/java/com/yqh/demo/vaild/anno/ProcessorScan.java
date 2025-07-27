@@ -4,12 +4,7 @@ import org.springframework.core.annotation.Order;
 
 import java.lang.annotation.*;
 
-/**
- * @Author: yangqinghui@cfhy.com
- * @Description:
- * @Date: Created in 13:55 2025/7/25
- * @Modified By:
- */
+
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

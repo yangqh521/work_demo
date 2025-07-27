@@ -10,12 +10,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import java.util.*;
 
-/**
- * @Author: yangqinghui@cfhy.com
- * @Description:
- * @Date: Created in 11:44 2025/7/25
- * @Modified By:
- */
+
 @Component
 public class PersisterManager {
 

@@ -4,12 +4,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * @Author: yangqinghui@cfhy.com
- * @Description:
- * @Date: Created in 09:52 2025/7/25
- * @Modified By:
- */
+
 @Data
 public class ValidationResult implements Serializable {
     private boolean success = true;

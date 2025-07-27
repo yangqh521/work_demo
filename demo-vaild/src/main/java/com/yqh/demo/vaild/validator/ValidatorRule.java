@@ -4,12 +4,7 @@ import com.yqh.demo.vaild.model.OrderContext;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-/**
- * @Author: yangqinghui@cfhy.com
- * @Description:
- * @Date: Created in 10:21 2025/7/25
- * @Modified By:
- */
+
 @FunctionalInterface
 public interface ValidatorRule {
 

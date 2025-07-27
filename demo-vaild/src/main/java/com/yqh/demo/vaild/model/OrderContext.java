@@ -20,6 +20,7 @@ public class OrderContext {
     private Long driverId;
     private Long shipperId;
     private Map<String, Object> cache = new HashMap<>();
+    private ValidationResult validationResult = new ValidationResult();
 
 
     // 存储基础信息

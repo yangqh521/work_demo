@@ -2,14 +2,23 @@ package com.yqh.demo.vaild.handler;
 
 import com.yqh.demo.vaild.model.OrderContext;
 import com.yqh.demo.vaild.persister.Persister;
-import com.yqh.demo.vaild.validator.AbstractValidator;
+import com.yqh.demo.vaild.validator.Validator;
 
-// 基础校验处理器
-public abstract class BaseHandler extends AbstractValidator implements Persister {
-
+// 抽象处理器（校验+持久化）
+public abstract class AbstractHandler implements Validator, Persister {
+    // 校验逻辑
     @Override
     public boolean validate(OrderContext context) {
-        return doValidate(context);
+        if(!doValidate(context)) {
+            return false;
+        }
+        // 执行子校验器
+        for (Validator validator : getSubValidators()) {
+            if(validator.support(context) && !validator.validate(context)){
+                return false;
+            }
+        }
+        return true;
     }
 
     protected abstract boolean doValidate(OrderContext context);
@@ -31,6 +40,4 @@ public abstract class BaseHandler extends AbstractValidator implements Persister
         return 0;
     }
 
-
 }
-

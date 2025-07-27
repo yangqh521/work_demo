@@ -8,23 +8,21 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-// 校验引擎
-public class ValidationEngine {
+/**
+ * @Author: yangqinghui@cfhy.com
+ * @Description:
+ * @Date: Created in 11:28 2025/7/25
+ * @Modified By:
+ */
+public abstract class AbstractHandlerEngine {
 
-    private List<Validator> validators = new ArrayList<>();
-    private List<Persister> persisters = new ArrayList<>();
+    public abstract List<Validator> getValidators();
 
-    public void addValidator(Validator validator) {
-        validators.add(validator);
-    }
-
-    public void addPersister(Persister persister) {
-        persisters.add(persister);
-    }
+    public abstract List<Persister> getPersisters();
 
     public boolean execute(OrderContext context) {
         // 阶段一：校验阶段
-        validators.sort(Comparator.comparingInt(Validator::getOrder));
+        List<Validator> validators = getValidators();
         for (Validator validator : validators) {
             // 中断
             if (!context.getValidationResult().isSuccess()) {
@@ -37,14 +35,17 @@ public class ValidationEngine {
                 return false;
             }
         }
+        context.setValidationPassed(true);
 
         // 阶段二：持久化阶段
-        persisters.sort(Comparator.comparingInt(Persister::getOrder));
+        List<Persister> persisters = getPersisters();
         for (Persister persister : persisters) {
-            persister.persist(context);
+            if (persister.support(context)) {
+                persister.persist(context);
+            }
         }
-
-        context.setValidationPassed(true);
         return true;
     }
+
+
 }
